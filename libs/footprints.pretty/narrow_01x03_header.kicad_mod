@@ -1,0 +1,11 @@
+(module narrow_01x03_header (layer F.Cu) (tedit 5C0A002E)
+  (fp_text reference REF** (at 0 3.81) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value narrow_01x03_header (at 0 -5.08) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (pad 1 thru_hole roundrect (at 0 -1.905) (size 1.651 1.27) (drill 0.762) (layers *.Cu *.Mask) (roundrect_rratio 0.4))
+  (pad 3 thru_hole roundrect (at 0 1.905) (size 1.651 1.27) (drill 0.762) (layers *.Cu *.Mask) (roundrect_rratio 0.4))
+  (pad 2 thru_hole roundrect (at 0 0) (size 1.651 1.27) (drill 0.762) (layers *.Cu *.Mask) (roundrect_rratio 0.4))
+)
