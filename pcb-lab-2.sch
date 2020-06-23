@@ -661,4 +661,93 @@ Wire Notes Line
 	1400 2000 1400 650 
 Wire Notes Line
 	1400 650  3500 650 
+$Comp
+L Amplifier_Current:INA181 U?
+U 1 1 5EF82514
+P 8000 1300
+F 0 "U?" H 8150 1200 50  0000 L CNN
+F 1 "INA181" H 8150 1100 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 8050 1350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ina181.pdf" H 8150 1450 50  0001 C CNN
+	1    8000 1300
+	1    0    0    -1  
+$EndComp
+Text Notes 7000 2100 0    50   ~ 0
+INA181A3 variant with 100V/V gain
+$Comp
+L Device:R_Small R?
+U 1 1 5EF83B05
+P 7300 1000
+F 0 "R?" H 7242 954 50  0000 R CNN
+F 1 "1" H 7242 1045 50  0000 R CNN
+F 2 "" H 7300 1000 50  0001 C CNN
+F 3 "~" H 7300 1000 50  0001 C CNN
+	1    7300 1000
+	1    0    0    1   
+$EndComp
+Text GLabel 7250 800  0    50   Input ~ 0
+V+
+Wire Wire Line
+	7250 800  7300 800 
+Wire Wire Line
+	7300 800  7300 900 
+Wire Wire Line
+	7300 1400 7700 1400
+Wire Wire Line
+	7300 1400 7300 1550
+Text Notes 7200 1650 0    50   ~ 0
+Load
+Connection ~ 7300 1400
+Wire Wire Line
+	7300 1100 7300 1400
+Text GLabel 7250 1400 0    50   Input ~ 0
+V-
+Wire Wire Line
+	7250 1400 7300 1400
+Wire Wire Line
+	7300 800  7550 800 
+Wire Wire Line
+	7550 800  7550 1200
+Wire Wire Line
+	7550 1200 7700 1200
+Connection ~ 7300 800 
+Text GLabel 7850 800  0    50   Input ~ 0
+VCC
+Wire Wire Line
+	7850 800  7900 800 
+Wire Wire Line
+	7900 800  7900 1000
+$Comp
+L power:GND #PWR?
+U 1 1 5EF9B209
+P 7900 1600
+F 0 "#PWR?" H 7900 1350 50  0001 C CNN
+F 1 "GND" H 7905 1427 50  0000 C CNN
+F 2 "" H 7900 1600 50  0001 C CNN
+F 3 "" H 7900 1600 50  0001 C CNN
+	1    7900 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 1600 7900 1600
+Connection ~ 7900 1600
+Wire Wire Line
+	8300 1300 8450 1300
+Text GLabel 8450 1300 2    50   Input ~ 0
+VOUT
+Wire Notes Line
+	7000 650  8800 650 
+Wire Notes Line
+	8800 650  8800 1900
+Wire Notes Line
+	8800 1900 7000 1900
+Wire Notes Line
+	7000 1900 7000 650 
+Text Notes 7000 2000 0    50   ~ 0
+High-side current sensing with INA181, separate suppy.
+Text Notes 1700 850  0    50   ~ 0
+Load
+Wire Wire Line
+	1800 1000 1800 900 
+Connection ~ 1800 1000
 $EndSCHEMATC
