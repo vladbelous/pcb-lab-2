@@ -755,8 +755,6 @@ F 3 "~" H 1900 5900 50  0001 C CNN
 	1    1900 5900
 	-1   0    0    -1  
 $EndComp
-Text GLabel 2200 5900 2    50   Input ~ 0
-V3+
 $Comp
 L power:GND #PWR03
 U 1 1 5F01F79F
@@ -788,7 +786,7 @@ F 3 "~" H 4850 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 4800 5600 0    50   Input ~ 0
-VCC
+V+
 $Comp
 L power:GND #PWR011
 U 1 1 5F027772
@@ -844,4 +842,8 @@ Text Notes 2850 6950 0    50   ~ 0
 GND
 Wire Notes Line
 	2950 6750 2950 6850
+Text GLabel 2200 5900 2    50   Input ~ 0
+V3+
+Text Notes 7400 2700 0    50   ~ 0
+V+ is 5.5V max\nV3+ is 26V max
 $EndSCHEMATC
